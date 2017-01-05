@@ -1,5 +1,6 @@
 package com.qaworks.pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,14 +26,14 @@ public class HeaderNav extends BasePage<HeaderNav> {
         waitForPageToLoad(getPageLoadCondition());
     }
 
-    //private static final Logger LOGGER = LoggerFactory.getLogger(SignInPage.class);
+    private static final Logger LOGGER = Logger.getLogger(HeaderNav.class);
 
     @Override
     protected void instantiatePage(HeaderNav page) {
         try {
             PageFactory.initElements(driver,page);
         } catch(Exception ex) {
-//            LOGGER.error("Instantiation failed");
+           LOGGER.error("Instantiation failed");
         }
     }
 

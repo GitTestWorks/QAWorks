@@ -1,5 +1,8 @@
 package com.qaworks.pages;
 
+import org.apache.log4j.*;
+
+import org.apache.log4j.spi.LoggerFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,7 +25,7 @@ public class HomePage extends BasePage<HomePage> {
         headerNav = new HeaderNav(driver);
     }
 
-    //private static final Logger LOGGER = LoggerFactory.getLogger(SignInPage.class);
+    private static final Logger LOGGER = Logger.getLogger(HomePage.class);
 
     @Override
     protected void instantiatePage(HomePage page) {
