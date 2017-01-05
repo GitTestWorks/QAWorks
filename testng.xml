@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Contact Us Suite" verbose="1" thread-count="1" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="com.qaworks.utils.TestNGExecutionListener"></listener>
+    </listeners>
+    <test name="ContactUs tests" annotations="JDK" preserve-order="true">
+        <classes>
+            <class name="com.qaworks.runner.RunCukesContactFeature"/>
+        </classes>
+    </test>
+</suite>
